@@ -7,7 +7,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '../components/ui/sheet'
-import { Button } from '../components/ui/Button'
+import { Button } from '../components/ui/button'
 
 const meta: Meta<typeof Sheet> = {
   title: 'Components/Sheet',

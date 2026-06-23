@@ -4,7 +4,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from '../components/ui/collapsible'
-import { Button } from '../components/ui/Button'
+import { Button } from '../components/ui/button'
 import * as React from 'react'
 
 const meta: Meta<typeof Collapsible> = {

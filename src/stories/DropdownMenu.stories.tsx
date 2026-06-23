@@ -7,7 +7,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '../components/ui/dropdown-menu'
-import { Button } from '../components/ui/Button'
+import { Button } from '../components/ui/button'
 
 const meta: Meta<typeof DropdownMenu> = {
   title: 'Components/DropdownMenu',

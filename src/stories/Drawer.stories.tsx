@@ -9,7 +9,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from '../components/ui/drawer'
-import { Button } from '../components/ui/Button'
+import { Button } from '../components/ui/button'
 
 const meta: Meta<typeof Drawer> = {
   title: 'Components/Drawer',

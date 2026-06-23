@@ -4,7 +4,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from '../components/ui/popover'
-import { Button } from '../components/ui/Button'
+import { Button } from '../components/ui/button'
 
 const meta: Meta<typeof Popover> = {
   title: 'Components/Popover',
