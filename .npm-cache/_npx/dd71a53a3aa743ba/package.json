@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@storybook/cli": "^10.4.6"
+  },
+  "_npx": {
+    "packages": [
+      "@storybook/cli@10.4.6"
+    ]
+  }
+}

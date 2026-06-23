@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "storybook": "^10.4.6"
+  },
+  "_npx": {
+    "packages": [
+      "storybook@latest"
+    ]
+  }
+}
