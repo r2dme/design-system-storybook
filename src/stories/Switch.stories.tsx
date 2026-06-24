@@ -13,9 +13,22 @@ type Story = StoryObj<typeof Switch>
 
 export const Default: Story = {
   render: () => (
-    <div className="flex items-center space-x-2">
+    <div className="flex items-center space-x-3">
       <Switch id="airplane-mode" />
-      <Label htmlFor="airplane-mode">Airplane Mode</Label>
+      <Label htmlFor="airplane-mode" className="text-sm font-medium leading-none cursor-pointer">
+        Airplane mode
+      </Label>
+    </div>
+  ),
+}
+
+export const Active: Story = {
+  render: () => (
+    <div className="flex items-center space-x-3">
+      <Switch id="airplane-mode-active" defaultChecked />
+      <Label htmlFor="airplane-mode-active" className="text-sm font-medium leading-none cursor-pointer">
+        Airplane mode
+      </Label>
     </div>
   ),
 }
