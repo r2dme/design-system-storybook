@@ -488,87 +488,87 @@ export const Playground: Story = {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-1">
-                <Label>Background Color</Label>
-                <Select value={bgColor} onValueChange={setBgColor}>
-                  <SelectTrigger>
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {modeColors.map(c => (
-                      <SelectItem key={c.name} value={c.name}>{c.name} ({String(c.value)})</SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+                <Label htmlFor="playground-bg-color">Background Color</Label>
+                <select
+                  id="playground-bg-color"
+                  value={bgColor}
+                  onChange={(e) => setBgColor(e.target.value)}
+                  className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground"
+                >
+                  {modeColors.map(c => (
+                    <option key={c.name} value={c.name}>{c.name} ({String(c.value)})</option>
+                  ))}
+                </select>
               </div>
 
               <div className="space-y-1">
-                <Label>Text Color</Label>
-                <Select value={textColor} onValueChange={setTextColor}>
-                  <SelectTrigger>
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {modeColors.map(c => (
-                      <SelectItem key={c.name} value={c.name}>{c.name} ({String(c.value)})</SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+                <Label htmlFor="playground-text-color">Text Color</Label>
+                <select
+                  id="playground-text-color"
+                  value={textColor}
+                  onChange={(e) => setTextColor(e.target.value)}
+                  className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground"
+                >
+                  {modeColors.map(c => (
+                    <option key={c.name} value={c.name}>{c.name} ({String(c.value)})</option>
+                  ))}
+                </select>
               </div>
 
               <div className="space-y-1">
-                <Label>Border Color</Label>
-                <Select value={borderColor} onValueChange={setBorderColor}>
-                  <SelectTrigger>
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {modeColors.map(c => (
-                      <SelectItem key={c.name} value={c.name}>{c.name} ({String(c.value)})</SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+                <Label htmlFor="playground-border-color">Border Color</Label>
+                <select
+                  id="playground-border-color"
+                  value={borderColor}
+                  onChange={(e) => setBorderColor(e.target.value)}
+                  className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground"
+                >
+                  {modeColors.map(c => (
+                    <option key={c.name} value={c.name}>{c.name} ({String(c.value)})</option>
+                  ))}
+                </select>
               </div>
 
               <div className="space-y-1">
-                <Label>Border Radius</Label>
-                <Select value={radius} onValueChange={setRadius}>
-                  <SelectTrigger>
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {borderRadius.map(r => (
-                      <SelectItem key={r.name} value={r.name}>{r.name} ({r.value}px)</SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+                <Label htmlFor="playground-radius">Border Radius</Label>
+                <select
+                  id="playground-radius"
+                  value={radius}
+                  onChange={(e) => setRadius(e.target.value)}
+                  className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground"
+                >
+                  {borderRadius.map(r => (
+                    <option key={r.name} value={r.name}>{r.name} ({r.value}px)</option>
+                  ))}
+                </select>
               </div>
 
               <div className="space-y-1">
-                <Label>Font Size</Label>
-                <Select value={fontSize} onValueChange={setFontSize}>
-                  <SelectTrigger>
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {fontSizes.map(f => (
-                      <SelectItem key={f.name} value={f.name}>{f.name} ({f.value}px)</SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+                <Label htmlFor="playground-font-size">Font Size</Label>
+                <select
+                  id="playground-font-size"
+                  value={fontSize}
+                  onChange={(e) => setFontSize(e.target.value)}
+                  className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground"
+                >
+                  {fontSizes.map(f => (
+                    <option key={f.name} value={f.name}>{f.name} ({f.value}px)</option>
+                  ))}
+                </select>
               </div>
 
               <div className="space-y-1">
-                <Label>Padding (Gap Scale)</Label>
-                <Select value={padding} onValueChange={setPadding}>
-                  <SelectTrigger>
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {gapTokens.slice(0, 15).map(g => (
-                      <SelectItem key={g.name} value={String(g.value)}>{g.name} ({g.value}px)</SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+                <Label htmlFor="playground-padding">Padding (Gap Scale)</Label>
+                <select
+                  id="playground-padding"
+                  value={padding}
+                  onChange={(e) => setPadding(e.target.value)}
+                  className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground"
+                >
+                  {gapTokens.slice(0, 15).map(g => (
+                    <option key={g.name} value={String(g.value)}>{g.name} ({g.value}px)</option>
+                  ))}
+                </select>
               </div>
             </CardContent>
           </Card>
